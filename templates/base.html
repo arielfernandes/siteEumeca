@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body class="bg-orange-grad">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <a class="navbar-brand px-5" href="{{url_for('index')}}">
+        <img src="{{url_for('static', filename='images/eumeca.png')}}" width="30" height="40" class="d-inline-block align-top" alt="">
+        Eumeca JR
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-5" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('servicos')}}">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}">Nossa história</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{{url_for('time')}}">Nosso Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{{url_for('contatos')}}">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{{url_for('parceiros')}}">Parceiros</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      {% block content %} {% endblock %}
+    </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white mb-0">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+
+
+    <div class="container p-4">
+    <!-- Section: Parceiros -->
+    <section>
+        <h3>Parceiros</h3>
+        <div class="row mt-4">
+          <div class="media col-sm">
+            <img class="mr-3" src="{{url_for('static', filename='images/fejesc.png')}}" alt="Generic placeholder image" width="200">
+          </div>
+          <div class="media col-sm">
+            <img class="mr-3" src="{{url_for('static', filename='images/IFSC_logo.png')}}" alt="Generic placeholder image" width="130">
+          </div>
+          <div class="media col-sm">
+            <img class="mr-3" src="{{url_for('static', filename='images/br-jr.jpg')}}" alt="Generic placeholder image" width="200">
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Telefone: (48) 3211-6191 <br> Horário de funcionamento: de segunda a sexta, das 8:30 até 12:30
+      </p>
+    </section>
+    
+      <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="#">Eumeca JR</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0095b55143.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      
+  <script>
+    particlesJS.load('particles-js', '/static/js/particles.json', function(){
+      console.log('particles.json loaded...');
+    });
+  </script>
+  </body>
+</html>

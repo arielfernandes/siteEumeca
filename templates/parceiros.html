@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+
+{% block content%}
+<div id="particles-js">
+	<div class="container h-100 mt-5">
+		<div class="container p-4 fullscreen w-100" style="position:absolute;">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="fontsize-70">{% block title %}Parceiros{%endblock%}</h3>
+				</div>
+			</div>
+			<div class="row p-5">
+				<div class="col-md-4 mt-5">
+						<div class="container">
+							<div class="">
+								<img src="{{url_for('static', filename='images/fejesc.png')}}" width="200">
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt-5">
+						<div class="container">
+							<div class="">
+								<img src="{{url_for('static', filename='images/IFSC_logo.png')}}" width="200">
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt-5">
+						<div class="container">
+							<div class="">
+								<img src="{{url_for('static', filename='images/br-jr.jpg')}}" width="200">
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% endblock %}

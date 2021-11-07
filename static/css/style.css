@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.color-white {
+    color:white;
+}
+.fontsize-70{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+}
+.fontsize-40{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.spaceletter-4 {
+    letter-spacing: .4rem;
+}
+#particles-js {
+    position: relative;
+    z-index: 0;
+}
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+}
+.bg-orange-grad {
+    background: #FFB75E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.btn-env {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.btn-env {
+    width: 200px;
+    background: #8C85F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 60px;
+}
+.f-bold {
+    font-weight: bold;
+}
+.bg-orange {
+    background:rgb(255, 236, 164) none repeat scroll 0% 0%;
+}
+.bg-service {
+    background-image: url('/static/images/cube1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.bg-texture-cube {
+    background-image: url('/static/images/cube1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.bg-blue {
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+.service-icon {
+    float: left;
+    background: #f36f36;
+    padding: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #f36f36;
+}
+

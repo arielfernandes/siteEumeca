@@ -1,0 +1,95 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class="container h-100">
+  <div class="container p-4 h-100 w-100">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="fontsize-70 color-white f-bold">{% block title %}Serviços{%endblock%}</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description fontesize-40 color-white f-bold">Soluções personalizadas e de qualidade para atender você!</p>
+      </div>
+    </div>
+    <div class="row p-5">
+      <div class="col-md-4 mt-5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{{url_for('static', filename='images/webdev.png')}}" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Web Developer</h1>
+              <p>Desenvolvimento front-end e back-end, configuração de bancos de dados, manutenção e atualização de sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{{url_for('static', filename='images/sistemaEmbarcado.png')}}" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Sistema Embarcado</h1>
+              <p>Desenvolvimento front-end e back-end, configuração de bancos de dados, manutenção e atualização de sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{{url_for('static', filename='images/Automacao.png')}}" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Automação</h1>
+              <p>Desenvolvimento front-end e back-end, configuração de bancos de dados, manutenção e atualização de sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{{url_for('static', filename='images/Software.png')}}" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Software</h1>
+              <p>Desenvolvimento front-end e back-end, configuração de bancos de dados, manutenção e atualização de sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{{url_for('static', filename='images/bsInteli.png')}}" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Business Inteligence</h1>
+              <p>Desenvolvimento front-end e back-end, configuração de bancos de dados, manutenção e atualização de sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img src="{{url_for('static', filename='images/consu.png')}}" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Consultoria</h1>
+              <p>Desenvolvimento front-end e back-end, configuração de bancos de dados, manutenção e atualização de sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

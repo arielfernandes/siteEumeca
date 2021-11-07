@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5 fullscreen">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="{{url_for('static', filename='images/nature.jpg')}}" class="rounded" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="{{url_for('static', filename='images/nature.jpg')}}" class="rounded" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="{{url_for('static', filename='images/nature.jpg')}}" class="rounded" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}
