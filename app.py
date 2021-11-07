@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 
 app = Flask(__name__)
 
@@ -13,8 +13,16 @@ def time():
     return render_template('time.html')
 
 
-@app.route('/contatos')
+@app.route('/contatos', methods=('GET', 'POST'))
 def contatos():
+    if request.method == 'POST':
+        name = request.form['inputName']
+        email = request.form['inputEmail']
+        phone = request.form['inputPhone']
+        company = request.form['inputCompany']
+        comment = request.form['inputText']
+        service = request.form['inputService']
+
     return render_template('contatos.html')
 
 

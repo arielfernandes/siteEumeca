@@ -8,34 +8,34 @@
             <div class="col-md-12 mt-5">
               <h1 class="fontsize-70 color-white">{% block title %} Contato {% endblock %}</h1>
             </div>
-            <form class="row p-4 mt-5 h-100">
+            <form class="row p-4 mt-5 h-100" method="post">
               <div class="col-md-6">
                 <label for="inputName" class="form-label color-white f-bold">Nome</label>
-                <input type="text" class="form-control" id="inputName">
+                <input type="text" class="form-control" id="inputName" name="inputName">
               </div>
               <div class="col-md-6">
                 <label for="inputEmail" class="form-label color-white f-bold">Email</label>
-                <input type="email" class="form-control" id="inputEmail">
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail">
               </div>
               <div class="col-12">
-                <label for="inputEmpresa" class="form-label color-white f-bold">Empresa</label>
-                <input type="text" class="form-control" id="inputEmpresa" placeholder="Empresa">
+                <label for="inputCompany" class="form-label color-white f-bold">Empresa</label>
+                <input type="text" class="form-control" id="inputCompany" name="inputCompany" placeholder="Empresa">
               </div>
               <div class="col-md-6">
                 <label for="inputPhone" class="form-label color-white f-bold">Telefone</label>
-                <input type="text" class="form-control" id="inputPhone">
+                <input type="text" class="form-control" id="inputPhone" name="inputPhone">
               </div>
               <div class="col-lg-6">
                 <label for="inputService" class="form-label color-white f-bold">Serviço de interesse</label>
-                <select id="inputService" class="form-select">
+                <select id="inputService" class="form-select" name="inputService">
                   <option selected>Selecione um serviço...</option>
                   <option>...</option>
                 </select>
               </div>
               <div class="col-lg-6 mt-3">
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Comentário</label>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="inputText" style="height: 100px"></textarea>
+                  <label for="floatingTextarea">Comentário</label>
                 </div>
               </div>
               <div class="col-12 mt-3">
