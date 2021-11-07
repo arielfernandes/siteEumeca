@@ -81,7 +81,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-            <img src="{{url_for('static', filename='images/consu.png')}}" alt="Avatar" style="width:300px;height:300px;">
+              <img src="{{url_for('static', filename='images/consu.png')}}" alt="Avatar" style="width:300px;height:300px;">
             </div>
             <div class="flip-card-back">
               <h1>Consultoria</h1>
@@ -89,6 +89,11 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-12 p-5 d-flex justify-content-center">
+        <a href=" {{url_for('contatos')}}">
+            <button type="submit" class="btn-env">Entre em Contato</button>
+        </a>
       </div>
     </div>
   </div>
