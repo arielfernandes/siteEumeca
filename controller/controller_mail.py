@@ -25,7 +25,7 @@ class SendMail:
         user = '<E-mail>'
         password = '<password>'
         subject_msg = f'Contato Site - {self.service} {self.company}'
-        toMail = self.email
+        toMail = '<*user?>'
 
         # Criando objeto
         print('Criando objeto servidor...')
