@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, request
+from controller.controller_mail import SendMail
 
 app = Flask(__name__)
 
@@ -23,6 +24,9 @@ def contatos():
         comment = request.form['inputText']
         service = request.form['inputService']
 
+        s = SendMail(name, email, phone, comment, service, company)
+        s.imprimi()
+        s.mail_smt()
     return render_template('contatos.html')
 
 
