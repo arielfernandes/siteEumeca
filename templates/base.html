@@ -16,7 +16,7 @@
   <body class="bg-orange-grad">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       
-      <a class="navbar-brand px-5" href="{{url_for('index')}}">
+      <a class="navbar-brand px-5" href="{{url_for('eumeca.index')}}">
         <img src="{{url_for('static', filename='images/eumeca.png')}}" width="30" height="40" class="d-inline-block align-top" alt="">
         Eumeca JR
       </a>
@@ -27,25 +27,25 @@
       <div class="collapse navbar-collapse px-5" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+            <a class="nav-link" href="{{url_for('eumeca.index')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{url_for('servicos')}}">Serviços</a>
+            <a class="nav-link" href="{{url_for('eumeca.servicos')}}">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{url_for('about')}}">Nossa história</a>
+            <a class="nav-link" href="{{url_for('eumeca.about')}}">Nossa história</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="{{url_for('time')}}">Nosso Time</a>
+            <a class="nav-link " href="{{url_for('eumeca.time')}}">Nosso Time</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="{{url_for('contatos')}}">Contato</a>
+            <a class="nav-link " href="{{url_for('eumeca.contatos')}}">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="{{url_for('parceiros')}}">Parceiros</a>
+            <a class="nav-link " href="{{url_for('eumeca.parceiros')}}">Parceiros</a>
           </li>
         </ul>
       </div>
